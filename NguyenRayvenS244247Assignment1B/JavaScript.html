@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--This document is hand coded by Rayven Nguyen, I used HTML and some CSS to create the layouts and text.-->
+
+<html lang="en">
+    
+<head>
+
+<div id="Wrapper">    
+    
+<meta charset="UTF-8"/>
+<meta name="description"
+content="This webpage is developed for the class Mobile Web Structures"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+<link rel="stylesheet" 
+href="css/main.css">
+<title>Living Style Guides</title>
+
+    </div>    
+</head>
+ 
+<body>
+
+<!--this is where Heading 1 will be -->    
+    
+<h1>Living Style Guides</h1>
+    
+
+ <!--------------this is the nav panel --------------->   
+<nav id="dropbox">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li class= "Current"><a href="JavaScript.html">JavaScript</a></li>
+  <li><a href="#">Topic Pages</a>
+<ul>
+<li><a href="Colour.html">Colour Palette</a></li>
+<li><a href="Typography.html">Typography</a></li>
+<li><a href="TableandForms.html">Table and Forms</a></li>
+<li><a href="LayoutandGrid.html">Layout and Grids</a> </li>
+
+</ul>
+  </li>
+      <li><a href="MoreInfo.html">More Information</a></li>
+ <li><a href="references.html">Refrences</a></li>
+    </ul>
+</nav>
+
+<h2>Local Database Storage</h2>          
+    
+<!--this is where Paragraph will be -->    
+    
+<article>  
+<h3>How does it work?</h3>
+    
+<!-------------- This is the Javascript for the font changing button javascript  --------------->
+<!-------------- part of this code was aquired from Jason's github examples, with modifications and additions added to create additional buttons for a different tasks and outcomes. ------------>
+  
+<h3>Font change toggled through a button</h3>    
+    
+    <div class="buttons">
+    <button type="button"  id="toggle_font48">Toggle 48px font</button>
+    <button type="button"  id="toggle_font32">Toggle 32px font</button>
+    </div>
+    
+    <p><label for="Comment">Here is a simple button which  changes the font size of the following text</label></p>
+        
+    <p class="row" id="Toggleable">
+        This is an example paragraph which will be used, it will become larger or smaller when the button above is pressed!
+    </p>
+    
+    <script type="text/javascript" src="js/font.js"></script>
+<br />
+<!--------------- This is the Javascript for the font color changing button javascript  -------------->
+<!--- this code was from Jason's github and personal modifications to suite the assignment criteria -->
+    
+ <h3>font color change toggled through a button</h3>  
+    
+<div class="row" id="color_container">
+                <p id="color_change">This is an example paragraph which will be used, it will change in color when the button below is pressed! abcdefghjklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            </div>
+    
+<script type="text/javascript" src="js/color.js"></script>
+    
+<br />
+<!---------------------------- This is the Javascript for the Animating heights ---------------------->
+               
+<h3>Javascripting heights to make drop down text</h3>  
+    
+<div class="row">
+                <p class="animation">This is an example of a drop-down text box, here we have the transition speed set to 300ms, making the transitioning more noticeable.</p>
+            </div>
+        <script type="text/javascript" src="js/Animation.js"></script>
+                    
+
+<br />
+    
+    
+<!---------------------------- This is the Javascript for pop up boxes ---------------------->
+               
+<h3>Javascripting pop up text boxes from buttons</h3>  
+    
+<button type="button" class="Pup">Normal Pop up</button>
+
+    
+<script type="text/javascript" src="js/vendor/jquery-3.2.0.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+    
+<br />
+
+<br />     
+    
+<button class="sweet_butt" onclick="sweet();">SweetAlert Pop up</button>
+
+<script type="text/javascript" src="js/vendor/jquery-3.2.0.js"></script>
+    
+<script src="js/vendor/sweetalert-master/dist/sweetalert.min.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="js/vendor/sweetalert-master/dist/sweetalert.css">
+    
+<br />
+
+<br />      
+    
+    
+<!---------------------------- This is the Javascript for the LocalDataBase ---------------------->
+    
+ <h3>Local Database Storage</h3>  
+    
+    <p><label for="Comment">Please insert data below so that it can be stored and retrieved when needed! Also a correct email must be used !!</label></p>
+  
+    <div class="row">
+                <form class="columns six" name="addingText">
+                    
+ 
+               <h4>Enter contact details:</h4>
+    
+<ul>
+    
+        
+
+    
+    <label for="Name"><FONT FACE="ComingSoon">Name:</FONT></label>
+                  <input type="text" id="name" placeholder="Insert Name Here...">
+            <br />
+    <label for="Name"><FONT FACE="ComingSoon">Email:</FONT></label>
+                  <input type="text" id="mail" placeholder="Insert Email Here...">
+            <br />
+    <label for="Name"><FONT FACE="ComingSoon">Comment:</FONT></label> 
+    
+    <br />
+    <textarea name="userInput" id="userInput" placeholder="Insert Comment Here..."></textarea>
+    
+    <br />
+                    
+                    
+    <br />
+                    <input type="button" id="write" value="Enter">
+    <br />
+                    <input type="button" id="read" value="Retrieve">
+    <br />
+                    <input type="button" id="reset" value="Reset">
+        
+                    
+ 
+        <p><label for="Comment">Below are the saved data</label></p>
+                <pre class="columns six" id="output"></pre>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    
+<br />  
+</ul>            
+</form>
+</div>
+    
+  
+<!------------------------ This is the Javascript for Selective text validators ---------------------->
+    
+ <h3>Selective Text Validator</h3>  
+        
+<p>Here we have a simple email detector. When an string of symbols is entered and it does not correctly follow the cominations required for normal emails, an error message will appear!</p>
+    
+<label for="Email"><FONT FACE="ComingSoon">Email</FONT></label>
+<input type="text" placeholder="Enter Email Here..." onblur="CorrectEmail(this);" />
+<br />
+    
+</article>
+</body>
+</html>
+<footer>    
+
+Disclaimer for Living Style Guides
+
+If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at Rayven.Nguyen@cdu.edu.au.
+Disclaimers for RNguyen.Spinetail
+
+All the information on this website is published in good faith and for general information purpose only. RNguyen.Spinetail does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (RNguyen.Spinetail), is strictly at your own risk. RNguyen.Spinetail will not be liable for any losses and/or damages in connection with the use of our website.
+
+From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove a link which may have gone ‘bad’.
+
+Please be also aware that when you leave our website, other sites may have different privacy policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their “Terms of Service” before engaging in any business or uploading any information.
+
+Consent
+By using our website, you hereby consent to our disclaimer and agree to its terms.
+
+Update
+
+Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+
+This Disclaimer was created at disclaimergenerator.net.    
+    
+This Webpage was written and designed by Rayven Nguyen, 2017. Copyright
+</footer>
+    
+
+<!--Author info: 
+Rayven Nguyen
+s244247
+Rayven_nguyen@hotmail.com-->    
