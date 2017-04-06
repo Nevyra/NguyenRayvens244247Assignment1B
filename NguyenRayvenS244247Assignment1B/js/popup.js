@@ -29,7 +29,7 @@ function sweet1(){
     
 }
 
-
+/** ---- this function here was the edge case for solving the issue of inputting an incorrect email address inside the email address text box, making sure each user is correctly inputing the right data----*/
 function CorrectEmail(CEmail){
         var symbols = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
