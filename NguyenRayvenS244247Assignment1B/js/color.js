@@ -12,6 +12,8 @@
 
 /** ------------------------------- JavaScript for color changing ---------------------------*/
 
+/** -----------parts of this function was used from Jason's bithub, they had some personal codes added to suite the needs of my website.----------*/
+
 (function(){
 	var paragraph = document.querySelector('#color_change');
 
@@ -21,6 +23,8 @@
 	}
 
 
+    
+/** ------------ these functions pretty much just creates the buttons that and enables them to do the given functions when they are 'clicked' --------------*/
 	function addToggleFunctionality(){
 	
 		var button = document.createElement('button');

@@ -12,6 +12,7 @@
 
 /** ------------------------------- JavaScript for transition animations ---------------------------*/
 
+/** ---------- These functions, variables and eventlisteners were made from parts of Jason's bithub and also implementing some of my own code to make it suite the needs of my page ---------------*/
 
 (function(){
 
@@ -68,7 +69,7 @@
 		}
 
 	}
-
+/** -----------creating the button that activates the functions---------------*/
 	function createButton(label){
 
 

@@ -11,6 +11,9 @@
 /*jslint vars: true */
 
 /** ------------------------------- JavaScript for font changing ----------------------------*/
+
+/** --------- Both these functions and variables were used from Jason's bithub examples, i've only just implemented my own coding into it to make it suite my needs for the webpage. ---------*/
+
 (function(){
 	var button = document.querySelector('#toggle_font48');
     
@@ -40,6 +43,8 @@
 	}
 
 })();
+
+
 
 (function(){
     var button = document.querySelector('#toggle_font32');
